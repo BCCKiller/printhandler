@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<NCScript xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xmlns="http://secure.newcropaccounts.com/interfaceV7"> 
+	<Credentials> 
+		<partnerName>demo</partnerName> 
+		<name>demo</name> 
+		<password>demo</password> 
+		<productName>SuperDuperSoftware</productName> 
+		<productVersion>V5.3</productVersion> 
+	</Credentials> 
+	<UserRole> 
+		<!-- See XML Schema: UserType for valid values --> 
+		<user>LicensedPrescriber</user> 
+		<!-- See XML Schema: RoleType for valid values --> 
+		<role>doctor</role> 
+	</UserRole> 
+	<Destination> 
+		<!-- See XML Schema: RequestedPageType for valid values --> 
+		<requestedPage>ws-register-licensedPrescriber</requestedPage> 
+	</Destination> 
+  <Account ID="demo"> 
+    <accountName>Your Customer's Account Name</accountName> 
+    <siteID>demo</siteID> 
+    <AccountAddress> 
+      <address1>232323 Test</address1> 
+      <address2>Suite 240</address2> 
+      <city>Boston</city> 
+      <state>MA</state> 
+      <zip>10409</zip> 
+      <zip4>1234</zip4> 
+      <country>US</country> 
+    </AccountAddress> 
+    <accountPrimaryPhoneNumber>5555551212</accountPrimaryPhoneNumber> 
+    <accountPrimaryFaxNumber>5555551313</accountPrimaryFaxNumber> 
+  </Account> 
+  <Location ID="DEMOLOC1"> 
+    <locationName>Your Customer's Location Name</locationName> 
+    <LocationAddress> 
+      <address1>232323 Test</address1> 
+      <address2>Suite 240</address2> 
+      <city>Boston</city> 
+      <state>MA</state> 
+      <zip>10409</zip> 
+      <zip4>1234</zip4> 
+      <country>US</country> 
+    </LocationAddress> 
+    <primaryPhoneNumber>5555551212</primaryPhoneNumber> 
+    <primaryFaxNumber>5555551213</primaryFaxNumber> 
+    <pharmacyContactNumber>5555551212</pharmacyContactNumber> 
+  </Location> 
+	<LicensedPrescriber ID="DEMOLP1"> 
+		<LicensedPrescriberName> 
+			<last>Smith</last> 
+			<first>Doctor</first> 
+			<middle>J</middle> 
+			<prefix>Dr</prefix> 
+			<suffix>Jr</suffix> 
+		</LicensedPrescriberName> 
+		<dea>DEA20</dea> 
+		<prescriberStatus>Active</prescriberStatus> 
+	</LicensedPrescriber> 
+</NCScript>
